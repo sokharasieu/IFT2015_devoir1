@@ -38,6 +38,25 @@ public class App {
             return;
         }
 
-        System.out.println("All tests successfully passed!");
+        System.out.println("All tests on the Palindrome successfully passed!");
+
+        // Exercice 3.1
+        Pile queue = new Pile();
+        queue.push(3);
+        queue.push(2);
+        queue.pop();
+        // queue.print();
+        // affiche: (3)
+
+        // Exercice 3.2
+        Double_pile queue_double = new Double_pile();
+        queue_double.push(true, 3);
+        queue_double.push(false, 2);
+        // queue_double.print()
+        // affiche: 
+        // pile one: (3)
+        // pile two: (2)
+
+        Pile_bonus<Double> plie_float = new Pile_bonus<>();
     }
 }
