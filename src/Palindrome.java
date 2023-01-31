@@ -10,9 +10,6 @@ public class Palindrome {
     }
 
     public static boolean checker(String input) {
-        // check length of string
-        // start from start and from end
-        // if they are not the same return false
         for (int i = 0, j = input.length() - 1; i < j; i++, j--) {
             if (input.charAt(i) != input.charAt(j)) {
                 return false;
@@ -21,7 +18,6 @@ public class Palindrome {
         return true;
     }
 
-    // check if a string is a palindrome trough a recursive method
     public static boolean checker_recursive(String input) {
 
         if (input.length() == 0 || input.length() == 1) {
