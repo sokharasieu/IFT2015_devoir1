@@ -13,13 +13,12 @@ public class Pile {
         } else {
             a[length] = elem;
             length++;
-            // System.out.println(elem + " pushed into stack");
         }
     }
 
     public int top() {
         if (length < 0) {
-            System.out.println("Stack Underflow");
+            System.out.println("No top");
             return 0;
         } else {
             int x = a[length];
@@ -29,7 +28,7 @@ public class Pile {
 
     public int pop() {
         if (length < 0) {
-            System.out.println("Stack Underflow");
+            System.out.println("nothing to pop");
             return 0;
         } else {
             int x = a[length - 1];
