@@ -1,37 +1,61 @@
 public class Pile {
-    // TODO
+    static final int maximum = 100;
 
-    public Pile(){}
+    int length = 0;
+    int a[] = new int[maximum];
 
-    public void push(int elem){
-        // TODO
+    public Pile() {
     }
 
-    public int top(){
-        // TODO
-        return 0;
-    }
-
-    public int pop(){
-        // TODO
-        return 0;
-    }
-
-    public int length(){
-        // TODO
-        return 0;
-    }
-
-    /*
-    // Sentez vous libre de modifier pour que cela fit avec votre code
-    public void print(){
-        System.out.print('(');
-        for (int i=0; i<length-1; i++){
-            System.out.print(elements[i]);
-            System.out.print(", ");
+    public void push(int elem) {
+        if (length >= (maximum - 1)) {
+            System.out.println("Stack maxed out");
+        } else {
+            a[length] = elem;
+            length++;
         }
-        System.out.print(elements[length-1]);
+    }
+
+    public int top() {
+        if (length < 0) {
+            System.out.println("No top");
+            return 0;
+        } else {
+            int x = a[length];
+            return x;
+        }
+    }
+
+    public int pop() {
+        if (length < 0) {
+            System.out.println("nothing to pop");
+            return 0;
+        } else {
+            int x = a[length - 1];
+            a[length - 1] = 0;
+            length--;
+            System.out.println(x + " has been popped");
+            return x;
+        }
+    }
+
+    public int length() {
+        System.out.println("lenght is " + length);
+        return length;
+    }
+
+    // Sentez vous libre de modifier pour que cela fit avec votre code
+    public void print() {
+        System.out.print('(');
+        for (int i = 0; i < length; i++) {
+            System.out.print(a[i]);
+            if (i + 1 == length) {
+                continue;
+            }
+            System.out.print(",");
+        }
+
         System.out.println(')');
     }
-    */
+
 }
