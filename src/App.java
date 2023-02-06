@@ -12,11 +12,11 @@ public class App {
 
         // 2.2 checker_recursive
         if (Palindrome.checker_recursive("radar") != true) {
-            System.out.println("2.2 'checker_recursive' function wrong output with input 'radar'");
+            System.out.println("2.2 'checker_recursive' function wrong output with input'radar'");
             return;
         }
         if (Palindrome.checker_recursive("rede") != false) {
-            System.out.println("2.2 'checker_recursive' function wrong output with input 'rede'");
+            System.out.println("2.2 'checker_recursive' function wrong output with input'rede'");
             return;
         }
 
